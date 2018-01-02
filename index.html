@@ -9,11 +9,131 @@
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	
-	
+	<!--modal -->
+	<!-- Large modal -->
+<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+	Login modal</button>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title" id="myModalLabel">Login/Registro - <a href="http://www.jquery2dotnet.com">petbook.com</a></h4>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+						<!-- Nav tabs -->
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+								<li><a href="#Registration" data-toggle="tab">Registro</a></li>
+							</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div class="tab-pane active" id="Login">
+								<form role="form" class="form-horizontal">
+									<div class="form-group">
+										<label for="email" class="col-sm-2 control-label">Correo</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="email1" placeholder="Email" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1" class="col-sm-2 control-label">Clave</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-2">
+										</div>
+										<div class="col-sm-10">
+											<button type="submit" class="btn btn-primary btn-sm">Submit</button>
+											<a href="javascript:;">Olvidaste tu clave?</a>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="tab-pane" id="Registration">
+								<form role="form" class="form-horizontal">
+									<div class="form-group">
+										<label for="email" class="col-sm-2 control-label">Nombre</label>
+										<div class="col-sm-10">
+											<div class="row">
+												<div class="col-md-3">
+													<select class="form-control">
+														<option>Don</option>
+														<option>Señorito</option>
+													</select>
+												</div>
+												<div class="col-md-9">
+													<input type="text" class="form-control" placeholder="Name" />
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="email" class="col-sm-2 control-label">Correo</label>
+										<div class="col-sm-10">
+											<input type="email" class="form-control" id="email" placeholder="Email" />
+										</div>
+									</div>
+                                <div class="form-group">
+                                    <label for="mobile" class="col-sm-2 control-label">
+                                        Celular</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-sm-2 control-label">
+                                        Clave</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" id="password" placeholder="Password" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                            Guardar & Continuar</button>
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            Cancel</button>
+                                    </div>
+                                </div>
+                                </form>
+							</div>
+                        </div>
+                        <div id="OR" class="hidden-xs">
+                            ó</div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row text-center sign-with">
+                            <div class="col-md-12">
+                                <h3>
+                                    Conectate en</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="btn-group btn-group-justified">
+                                    <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
+                                        Google</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 	<!--js-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="assets/js/app.js"></script>

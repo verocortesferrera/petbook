@@ -15,125 +15,162 @@
 <body>
 	<!--modal -->
 	<!-- Large modal -->
-<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-	Login modal</button>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-    aria-hidden="true">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-					<h4 class="modal-title" id="myModalLabel">Login/Registro - <a href="http://www.jquery2dotnet.com">petbook.com</a></h4>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
-						<!-- Nav tabs -->
-							<ul class="nav nav-tabs">
-								<li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
-								<li><a href="#Registration" data-toggle="tab">Registro</a></li>
-							</ul>
-						<!-- Tab panes -->
-						<div class="tab-content">
-							<div class="tab-pane active" id="Login">
-								<form role="form" class="form-horizontal">
-									<div class="form-group">
-										<label for="email" class="col-sm-2 control-label">Correo</label>
-										<div class="col-sm-10">
-											<input type="email" class="form-control" id="email1" placeholder="Email" />
+	<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+		Login modal</button>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+	 aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						<h4 class="modal-title" id="myModalLabel">Login/Registro - <a href="http://www.jquery2dotnet.com">petbook.com</a></h4>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-md-8" style="border-right: 1px dotted #C2C2C2;padding-right: 30px;">
+							<!-- Nav tabs -->
+								<ul class="nav nav-tabs">
+									<li class="active"><a href="#Login" data-toggle="tab">Login</a></li>
+									<li><a href="#Registration" data-toggle="tab">Registro</a></li>
+								</ul>
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div class="tab-pane active" id="Login">
+									<form role="form" class="form-horizontal">
+										<div class="form-group">
+											<label for="email" class="col-sm-2 control-label">Correo</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control" id="email1" placeholder="Email" />
+											</div>
 										</div>
-									</div>
-									<div class="form-group">
-										<label for="exampleInputPassword1" class="col-sm-2 control-label">Clave</label>
-										<div class="col-sm-10">
-											<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+										<div class="form-group">
+											<label for="exampleInputPassword1" class="col-sm-2 control-label">Clave</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+											</div>
 										</div>
-									</div>
-									<div class="row">
-										<div class="col-sm-2">
+										<div class="row">
+											<div class="col-sm-2">
+											</div>
+											<div class="col-sm-10">
+												<button type="submit" class="btn btn-primary btn-sm">Submit</button>
+												<a href="javascript:;">Olvidaste tu clave?</a>
+											</div>
 										</div>
-										<div class="col-sm-10">
-											<button type="submit" class="btn btn-primary btn-sm">Submit</button>
-											<a href="javascript:;">Olvidaste tu clave?</a>
-										</div>
-									</div>
-								</form>
-							</div>
-							<div class="tab-pane" id="Registration">
-								<form role="form" class="form-horizontal">
-									<div class="form-group">
-										<label for="email" class="col-sm-2 control-label">Nombre</label>
-										<div class="col-sm-10">
-											<div class="row">
-												<div class="col-md-3">
-													<select class="form-control">
-														<option>Don</option>
-														<option>Señorito</option>
-													</select>
-												</div>
-												<div class="col-md-9">
-													<input type="text" class="form-control" placeholder="Name" />
+									</form>
+								</div>
+								<div class="tab-pane" id="Registration">
+									<form role="form" class="form-horizontal">
+										<div class="form-group">
+											<label for="email" class="col-sm-2 control-label">Nombre</label>
+											<div class="col-sm-10">
+												<div class="row">
+													<div class="col-md-3">
+														<select class="form-control">
+															<option>Don</option>
+															<option>Señorito</option>
+														</select>
+													</div>
+													<div class="col-md-9">
+														<input type="text" class="form-control" placeholder="Name" />
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="form-group">
-										<label for="email" class="col-sm-2 control-label">Correo</label>
-										<div class="col-sm-10">
-											<input type="email" class="form-control" id="email" placeholder="Email" />
+										<div class="form-group">
+											<label for="email" class="col-sm-2 control-label">Correo</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control" id="email" placeholder="Email" />
+											</div>
 										</div>
-									</div>
-                                <div class="form-group">
-                                    <label for="mobile" class="col-sm-2 control-label">
-                                        Celular</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="mobile" placeholder="Mobile" />
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="password" class="col-sm-2 control-label">
-                                        Clave</label>
-                                    <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="password" placeholder="Password" />
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-2">
-                                    </div>
-                                    <div class="col-sm-10">
-                                        <button type="button" class="btn btn-primary btn-sm">
-                                            Guardar & Continuar</button>
-                                        <button type="button" class="btn btn-default btn-sm">
-                                            Cancel</button>
-                                    </div>
-                                </div>
-                                </form>
+										<div class="form-group">
+											<label for="mobile" class="col-sm-2 control-label">Celular</label>
+											<div class="col-sm-10">
+												<input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="password" class="col-sm-2 control-label">Clave</label>
+										<div class="col-sm-10">
+											<input type="password" class="form-control" id="password" placeholder="Password" />
+										</div>
+										</div>
+										<div class="row">
+											<div class="col-sm-2">
+										</div>
+											<div class="col-sm-10">
+												<button type="button" class="btn btn-primary btn-sm">Guardar & Continuar</button>
+												<button type="button" class="btn btn-default btn-sm">Cancel</button>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
-                        </div>
-                        <div id="OR" class="hidden-xs">
-                            ó</div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="row text-center sign-with">
-                            <div class="col-md-12">
-                                <h3>
-                                    Conectate en</h3>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="btn-group btn-group-justified">
-                                    <a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">
-                                        Google</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+							<div id="OR" class="hidden-xs">ó</div>
+						</div>
+						<div class="col-md-4">
+							<div class="row text-center sign-with">
+								<div class="col-md-12">
+									<h3>Conectate en</h3>
+								</div>
+								<div class="col-md-12">
+									<div class="btn-group btn-group-justified">
+										<a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">Google</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--fin modal registro-->
+	<!--barra navegacion-->
+	<header>
+		<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><i class="fa fa-paw" aria-hidden="true"></i> PETBOOK</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i></a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+				<div class="form-group">
+					<input type="text" class="form-control" placeholder="Search">
+						</div>
+						<button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+					</form>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
 
-
+	<!--basededatos-->
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyBNS0v2QkqIXoCLZGKEr3hj2OfUx3nvLis",
+		authDomain: "petbook-f51a5.firebaseapp.com",
+		databaseURL: "https://petbook-f51a5.firebaseio.com",
+		projectId: "petbook-f51a5",
+		storageBucket: "",
+		messagingSenderId: "267505955403"
+	};
+	firebase.initializeApp(config);
+</script>
 	<!--js-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="assets/js/app.js"></script>

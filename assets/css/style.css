@@ -26,3 +26,84 @@ div#OR {
 	color: #fff;
 	background-color: #90613B;
 }
+
+/*Establecemos de ingreso*/
+.registro {
+	background-image: url(../img/26234520_10215323236053820_1205310063_n.png);
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+}
+
+
+/*ajustamos el boton de ingreso*/
+#boton1 {
+    padding: 21px 21px 21px;
+    color: white;
+    border-color: #90613b;
+    background: #AF7D5C;
+    font-weight: 600;
+    margin-top:180px;   
+}
+
+
+/*ajustamos la primera pestaña del modal de inscripcion - ingreso*/
+
+.nav-tabs{
+    color: black;
+}
+
+.modal-header{
+    background: #90613B;
+    color: white;
+}
+
+#myModalLabel a {
+    color:black;
+}
+
+#boton2 {
+    color: white;
+    background: #AF7D5C;
+    border-color: #90613b;
+}
+
+#olvidaste {
+    color: #C98E5C;
+}
+
+/*ajsutamos la segunda pestaña del modal de inscripcion-registro*/
+
+#boton3 {
+    color: white;
+    background: #AF7D5C;
+    border-color: #90613b;
+}
+
+
+/*ajustamos la barra de navegacion*/
+.navbar-default {
+	background: #AF7D5C;
+    border-color: #90613b;
+    color: white;
+}
+
+.navbar-brand i {
+	color: #F3F3D9;
+	text-align: center;
+    display: inline-block;
+    position: absolute;
+    font-size: 26px;
+}
+
+.navbar-brand ul {
+	color: #F3F3D9;
+	text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+#iconosbarra li a {
+	color: #F3F3D9;
+	font-size: 24px;
+}

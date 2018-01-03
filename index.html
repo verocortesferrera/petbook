@@ -13,17 +13,19 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
+	<div class="registro" id="registro">
+		<button class="btn btn-primary center-block " id="boton1" data-toggle="modal" data-target="#myModal">REGISTRATE AHORA</button >
+	</div>
 	<!--modal -->
 	<!-- Large modal -->
-	<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-		Login modal</button>
+	
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
 	 aria-hidden="true">
 			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-						<h4 class="modal-title" id="myModalLabel">Login/Registro - <a href="http://www.jquery2dotnet.com">petbook.com</a></h4>
+						<h4 class="modal-title" id="myModalLabel">Registro <a href="#">PetBook.com</a></h4>
 					</div>
 					<div class="modal-body">
 						<div class="row">
@@ -46,15 +48,15 @@
 										<div class="form-group">
 											<label for="exampleInputPassword1" class="col-sm-2 control-label">Clave</label>
 											<div class="col-sm-10">
-												<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Email" />
+												<input type="email" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" />
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-sm-2">
 											</div>
 											<div class="col-sm-10">
-												<button type="submit" class="btn btn-primary btn-sm">Submit</button>
-												<a href="javascript:;">Olvidaste tu clave?</a>
+												<button type="button" class="btn btn-primary btn-sm" id="boton2">Ingresar</button>
+												<a id="olvidaste" href="javascript:;">Olvidaste tu clave? </a>
 											</div>
 										</div>
 									</form>
@@ -72,7 +74,7 @@
 														</select>
 													</div>
 													<div class="col-md-9">
-														<input type="text" class="form-control" placeholder="Name" />
+														<input type="text" class="form-control" placeholder="Nombre Completo" />
 													</div>
 												</div>
 											</div>
@@ -86,20 +88,20 @@
 										<div class="form-group">
 											<label for="mobile" class="col-sm-2 control-label">Celular</label>
 											<div class="col-sm-10">
-												<input type="email" class="form-control" id="mobile" placeholder="Mobile" />
+												<input type="email" class="form-control" id="mobile" placeholder="Número de telefono" />
 											</div>
 										</div>
 										<div class="form-group">
 											<label for="password" class="col-sm-2 control-label">Clave</label>
 										<div class="col-sm-10">
-											<input type="password" class="form-control" id="password" placeholder="Password" />
+											<input type="password" class="form-control" id="password" placeholder="Contraseña" />
 										</div>
 										</div>
 										<div class="row">
 											<div class="col-sm-2">
 										</div>
 											<div class="col-sm-10">
-												<button type="button" class="btn btn-primary btn-sm">Guardar & Continuar</button>
+												<button type="button" class="btn btn-primary btn-sm" id="boton3">Guardar & Continuar</button>
 												<button type="button" class="btn btn-default btn-sm">Cancel</button>
 											</div>
 										</div>
@@ -111,11 +113,11 @@
 						<div class="col-md-4">
 							<div class="row text-center sign-with">
 								<div class="col-md-12">
-									<h3>Conectate en</h3>
+									<h3>Conectarse por </h3>
 								</div>
 								<div class="col-md-12">
-									<div class="btn-group btn-group-justified">
-										<a href="#" class="btn btn-primary">Facebook</a> <a href="#" class="btn btn-danger">Google</a>
+									<div class="btn-group btn-group-justified">  
+										<a href="#" class="btn btn-primary">  <i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook </a> <a href="#" class="btn btn-danger"><i class="fa fa-google-plus" aria-hidden="true"></i> Google</a>
 									</div>
 								</div>
 							</div>
@@ -125,8 +127,9 @@
 			</div>
 		</div>
 	</div><!--fin modal registro-->
-	<!--barra navegacion-->
-	<header>
+
+	<!--barra de navegacion-->
+	<header id="web">
 		<nav class="navbar navbar-default">
 		<div class="container-fluid">
 		<!-- Brand and toggle get grouped for better mobile display -->
@@ -137,18 +140,19 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><i class="fa fa-paw" aria-hidden="true"></i> PETBOOK</a>
+				<a class="navbar-brand" href="#"><i class="fa fa-paw" aria-hidden="true"></i> <ul>PETBOOK</ul></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav" id="iconosbarra">
 					<li class="active"><a id="home" href="#"><i class="fa fa-home" aria-hidden="true"></i></a></li>
 					<li><a id="user" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a></li>
 					<li><a id="mensaje" href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i></a></li>
 				</ul>
 				<form class="navbar-form navbar-right">
 				<div class="form-group">
-					<input type="text" class="form-control" placeholder="amiguitos">
+					<input type="text" class="form-control" placeholder="Buscar amigos...">
+
 						</div>
 						<button type="submit" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
 					</form>
@@ -156,6 +160,48 @@
 			</div><!-- /.container-fluid -->
 		</nav>
 	</header>
+		<!--seccion home-->
+	<section id="inicio" style="display:none">
+		<div class="container think">
+			<div class="row">
+				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+					<div class="fotoPerfil">
+						<span><i class="fa fa-user-circle-o" aria-hidden="true"></i></span>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+					<h3>Misiffú</h3>
+					<p>Gato Travieso</p>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+					<form action="">
+						<textarea class="piensa" name="textarea" rows="5" cols="50" placeholder="en que piensas"></textarea>
+						<button type="button" class="btn">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--seccion perfil-->
+	<section class="container-fluid" id="perfil" style="display:none">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 fotoPerfil">
+					<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--seccion mensajes-->
+	<section id="message" style="display:none">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>MENSAJE</h1>
+				</div>
+			</div>
+		</div>
+	</section>
 	
 
 	<!--basededatos-->

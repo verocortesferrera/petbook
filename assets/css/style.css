@@ -1,4 +1,12 @@
 
+
+@media (min-width: 992px) {
+	.foto {
+	
+	}
+}
+
+
 .nav-tabs {
 	margin-bottom: 15px;
 }
@@ -118,7 +126,8 @@ div#OR {
 /*inicio*/
 .think{
 	width: 80%;
-	height: 30vh;
+	height: auto;
+	padding-top: 40px;
 	background-color: #F6653C;
 	vertical-align: middle;
 	border-radius: 5px;
@@ -127,7 +136,7 @@ div#OR {
 	font-size: 90px;
 	color:#fff;
 	margin:15px;
-	padding-top: 40px;
+
 }
 
 .think p, h3{
@@ -135,10 +144,16 @@ div#OR {
 	font-weight: bolder;
 	vertical-align: middle;
 }
-
-.think h3{
-	padding-top: 50px;
+.piensa{
+	margin-top: 20px;
 }
-.think .piensa{
-	margin-top: 40px;
+
+.upPhoto .up{
+	color:#F6653C;
+	font-size: 50px;
+}
+
+#fotos img{
+width: 90%;
+height: auto;
 }

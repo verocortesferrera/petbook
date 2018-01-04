@@ -157,3 +157,9 @@ div#OR {
 width: 90%;
 height: auto;
 }
+
+.comparte{
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #AF7D5C;
+}

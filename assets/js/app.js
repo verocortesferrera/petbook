@@ -51,6 +51,15 @@ console.log('hola');
 		var src = 'http://r.ddmcdn.com/s_f/o_1/cx_0/cy_0/cw_300/ch_300/w_300/APL/uploads/2014/10/kitten-cuteness300.jpg'; //Esta es la variable que contiene la url de una imagen ejemplo, luego puedes poner la que quieras
 		image.src = src;
 
-    $('#imageUp').append(image);
-});
+		$('#imageUp').append(image);
+	});
+
+	/*chat*/
+	$('#send').click(function(){
+		var chat = $('#comment').val();
+			if( chat !== '');
+			var element = $('<p></p>').text(chat);
+			$('#chat').append(element);
+			$('#comment').val('');
+	})
 });

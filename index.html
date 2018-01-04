@@ -234,14 +234,39 @@
 		</div>
 	</section>
 <!--seccion mensajes-->
-	<section id="message" style="display:none">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h1>MENSAJE</h1>
-				</div>
-			</div>
+	<section class="container-fluid" id="message" style="display:none">
+		<div class="row">
+			<img src="assets/img/mascotas.jpg" alt="chimpance" class="headerchat">
 		</div>
+		<div class="row">
+			<aside class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h3>Mensajes Privados</h3>
+				<div class="input-group row">
+					<input type="text" class="form-control" placeholder="Buscar Amigos">
+					<span class="input-group-btn">Enviar</span>
+				</div><!-- /input-group -->
+		<!--personas-->
+				<ol class="list-group">
+					<li class="list-group-item"><img class="tuSesion" src="assets/img/jose.jpg" alt=""> Missifú<span class="badge">14</span></li>
+					<li class="list-group-item"><img class="tuSesion" src="assets/img/mariapaula.jpg" alt=""> Cachupín<span class="badge">1</span></li>
+					<li class="list-group-item"><img class="tuSesion" src="assets/img/andrea.jpg" alt=""> Don Graff<span class="badge">1</span></li>
+					<li class="list-group-item"><img class="tuSesion" src="assets/img/katy.jpg" alt=""> Cholito<span class="badge">8</span></li>
+					<li class="list-group-item"><img class="tuSesion" src="assets/img/anamaria.jpg" alt=""> Con Botas<span class="badge">6</span></li>
+				</ol>
+			</aside>
+		</div>
+	<!--zona chat-->
+		<div class="panel-body conversation">
+			<div class=" col-xs-12 col-sm-8 col-md-8 col-lg-8" id="chat" ><!--posteo--></div>
+			<!--div input text-->
+			<div class="input-group input-group-lg chat pull-right" id="caja" >
+				<span class="input-group-addon glyphicon glyphicon-pencil" id="sizing-addon1"></span>
+					<input id="comment" type="text" class="form-control" placeholder="Escribe tu mensaje" aria-describedby="sizing-addon1">
+				<span class="input-group-btn">
+						<button class="btn btn-default boton" type="button" id="send">Enviar</button>
+				</span>
+			</div><!--input-->
+		</div><!--finzonachat-->
 	</section>
 
 	<!--basededatos-->

@@ -72,44 +72,44 @@ div#OR {
 }
 
 #boton2 {
-    color: white;
-    background: #AF7D5C;
-    border-color: #90613b;
+	color: white;
+	background: #AF7D5C;
+	border-color: #90613b;
 }
 
 #olvidaste {
-    color: #C98E5C;
+	color: #C98E5C;
 }
 
 /*ajsutamos la segunda pestaña del modal de inscripcion-registro*/
 
 #boton3 {
-    color: white;
-    background: #AF7D5C;
-    border-color: #90613b;
+	color: white;
+	background: #AF7D5C;
+	border-color: #90613b;
 }
 
 
 /*ajustamos la barra de navegacion*/
 .navbar-default {
 	background: #AF7D5C;
-    border-color: #90613b;
-    color: white;
+	border-color: #90613b;
+	color: white;
 }
 
 .navbar-brand i {
 	color: #F3F3D9;
 	text-align: center;
-    display: inline-block;
-    position: absolute;
-    font-size: 26px;
+	display: inline-block;
+	position: absolute;
+	font-size: 26px;
 }
 
 .navbar-brand ul {
 	color: #F3F3D9;
 	text-align: center;
-    display: inline-block;
-    position: relative;
+	display: inline-block;
+	position: relative;
 }
 
 #iconosbarra li a {
@@ -127,15 +127,15 @@ div#OR {
 .think{
 	width: 80%;
 	height: auto;
-	padding-top: 40px;
-	background-color: #F6653C;
+	background-color: #ED9961;
 	vertical-align: middle;
 	border-radius: 5px;
+	padding-top: 5px;
 }
 .think span .fa-user-circle-o{
 	font-size: 90px;
 	color:#fff;
-	margin:15px;
+	margin: 15px 15px 15px 15px;
 
 }
 
@@ -149,17 +149,28 @@ div#OR {
 }
 
 .upPhoto .up{
-	color:#F6653C;
-	font-size: 50px;
+	color:#ED9961;
+	outline:0 none;
+	font-size: 20px;
+	cursor:pointer;
 }
 
 #fotos img{
 width: 90%;
 height: auto;
+
 }
 
 .comparte{
 	font-weight: bolder;
 	text-transform: uppercase;
 	color: #AF7D5C;
+}
+
+/*seccion mensajes*/
+.headerchat{
+	width: 100%;
+	height: 40vh;
+	object-fit: cover;
+	margin:0;
 }

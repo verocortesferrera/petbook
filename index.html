@@ -242,7 +242,7 @@
                     </div>
                     <div class="action-buttons">
                         <div class="row">
-                            <div class="col-xs-6"  id="botonseguir">
+                            <div class="col-xs-6" id="botonseguir">
                                 <a href="#" class="btn btn-success btn-block"><i class="fa fa-plus-round"></i> Seguir</a>
                             </div>
                             <div class="col-xs-6" id="botoninbox" >
@@ -254,7 +254,7 @@
                         <h3>About Me</h3>
                         <p>HOLA Soy Misifus y soy un gato angora. Me gusta ronronear y comer la comida de mi humano.
                         <br>
-                        <br> 
+                        <br>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, amet? Ea nam fuga commodi, dicta facilis dolorem nihil illum cupiditate nulla dolores cum, neque eius modi fugit debitis illo laudantium?</p>
                     </div>
                     <div class="section">
@@ -560,6 +560,8 @@
 					<input type="text" class="form-control col-xs-12 col-sm-4 col-md-4 col-lg-4" id="buscaamigos" placeholder="Buscar Amigos">
 					<span class="input-group-btn">Enviar</span>
 				</div><!-- /input-group -->
+				<h3 class="tituloMensaje">Chat</h3>
+
 		<!--personas-->
 				<ol class="list-group">
 					<li class="list-group-item"><img class="tuSesion" src="assets/img/perfilmisifus.jpg" alt=""> Missifú<span class="badge">14</span></li>
@@ -569,19 +571,17 @@
 					<li class="list-group-item"><img class="tuSesion" src="assets/img/followerdog.jpg" alt=""> Con Botas<span class="badge">6</span></li>
 				</ol>
 			</aside>
-		</div>
 	<!--zona chat-->
-		<div class="panel-body conversation">
-			<div class=" col-xs-12 col-sm-8 col-md-8 col-lg-8" id="chat" ><!--posteo--></div>
+		<div class="panel-body conversation col-xs-12 col-sm-7 col-md-7 col-lg-7">
+			<div class="chat" id="chat" ><!--posteo--></div>
 			<!--div input text-->
-			<div class="input-group input-group-lg chat pull-right" id="caja" >
-				<span class="input-group-addon glyphicon glyphicon-pencil" id="sizing-addon1"></span>
-					<input id="comment" type="text" class="form-control" placeholder="Escribe tu mensaje" aria-describedby="sizing-addon1">
-				<span class="input-group-btn">
-						<button class="btn btn-default boton" type="button" id="send">Enviar</button>
-				</span>
-			</div><!--input-->
+				<div class="input-group input-group-lg pull-left" id="caja" >
+					<span class="input-group-addon glyphicon glyphicon-pencil" id="sizing-addon1"></span>
+						<input id="comment" type="text" class="form-control" placeholder="Escribe tu mensaje" aria-describedby="sizing-addon1">
+				</div><!--input-->
+				<button class="btn btn-default boton group-addon" type="button" id="send">Enviar</button>
 		</div><!--finzonachat-->
+	</div>
 	</section>
 
 	<!--base de datos-->

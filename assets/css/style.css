@@ -197,7 +197,7 @@ height: auto;
 .profile-header-background img {
 	height: 350px;
 	width: 100%;
-  }
+	}
 
 .profile-info-left {
   position: relative;
@@ -522,4 +522,20 @@ height: auto;
   border-radius: 50%;
   max-width: 100%;
   margin: 3px;
+}
+
+.chat{
+	height: 300px;
+	width: 90%;
+}
+
+#caja{
+	width: 80%;
+	height: auto;
+}
+
+.tituloMensaje{
+	font-size: 3em;
+	color:#ED9961;
+	font-weight: 700;
 }

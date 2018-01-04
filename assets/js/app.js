@@ -30,10 +30,9 @@ console.log('hola');
 /*posteo home*/
 	$(function(){
 		$('#post').on('click', function(){
-			console.log('hola');
-			var valo = $('#texto').val();
-				if(valo !==''){
-					var elem = $('<p></p>').text(valo);
+			var valor = $('#texto').val();
+				if(valor !==''){
+					var elem = $('<p></p>').text(valor);
 					$(elem).append('<button class ="rem btn-xs">x</button>');
 					$('#boxPost').append(elem);
 					$('#texto').val('');

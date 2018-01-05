@@ -8,8 +8,7 @@ $(document).ready(function() {
 	})
 
 	$('#close').click(function(){
-		$('#registro').hide();
-		$('#inicio').show();
+
 	})
 
 		$('#boton3').click(function(){
@@ -43,8 +42,8 @@ console.log('hola');
 		$('#post').on('click', function(){
 			var valor = $('#texto').val();
 				if(valor !==''){
-					var elem = $('<p></p>').text(valor);
-					$(elem).append('<button class ="rem btn-xs">x</button>');
+					var elem = $('<p class="tipoPost"></p>').text(valor + " ");
+					$(elem).append('<button class ="rem btn-xs btn-warning">x</button>');
 					$('#boxPost').append(elem);
 					$('#texto').val('');
 					$('.rem').on('click', function(){
@@ -56,12 +55,16 @@ console.log('hola');
 
 	/*posteo imagen*/
 	$("#up").click(function() {
-		console.log('hola');
 		var image = new Image();
 		var src = 'http://r.ddmcdn.com/s_f/o_1/cx_0/cy_0/cw_300/ch_300/w_300/APL/uploads/2014/10/kitten-cuteness300.jpg'; //Esta es la variable que contiene la url de una imagen ejemplo, luego puedes poner la que quieras
 		image.src = src;
-
-		$('#imageUp').append(image);
+		var fotoup = $('<div></div>');
+		$('#imageUp').append(fotoup)
+		$(fotoup).append(image);
+		$(fotoup).append(" " + '<button class ="rem btn-xs btn-warning">x</button>');
+			$('.rem').on('click', function(){
+				$(this).parent().remove();
+			});
 	});
 
 	/*chat*/

@@ -7,6 +7,17 @@ $(document).ready(function() {
 		$('#myModal').modal('toggle');
 	})
 
+	$('#close').click(function(){
+		$('#registro').hide();
+		$('#inicio').show();
+	})
+
+		$('#boton3').click(function(){
+		$('#registro').hide();
+		$('#inicio').show();
+		$('#myModal').modal('toggle');
+	})
+
 /*pestañas*/
 	$('#home').click(function(){
 console.log('hola');

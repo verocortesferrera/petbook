@@ -1,21 +1,19 @@
 $(document).ready(function() {
+	/*modal*/
 	$('#myModal').modal('show');
 
 	$('#boton2').click(function(){
 		$('#registro').hide();
 		$('#inicio').show();
 		$('#myModal').modal('toggle');
-	})
+	});
 
-	$('#close').click(function(){
-
-	})
 
 		$('#boton3').click(function(){
 		$('#registro').hide();
 		$('#inicio').show();
 		$('#myModal').modal('toggle');
-	})
+	});
 
 /*pestañas*/
 	$('#home').click(function(){
@@ -23,19 +21,19 @@ console.log('hola');
 		$('#inicio').show();
 		$('#perfil').hide();
 		$('#message').hide();
-	})
+	});
 
 	$('#user').click(function(){
 		$('#inicio').hide();
 		$('#perfil').show();
 		$('#message').hide();
-	})
+	});
 
 	$('#mensaje').click(function(){
 		$('#inicio').hide();
 		$('#perfil').hide();
 		$('#message').show();
-	})
+	});
 
 /*posteo home*/
 	$(function(){

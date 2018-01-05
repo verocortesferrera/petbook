@@ -524,6 +524,14 @@ height: auto;
 	height: 400px;
 	width: 90%;
 	background-color: #F7F7F7;
+	margin-top: 110px;
+}
+
+@media screen and (max-width: 480px){
+	.chat{
+		margin-top: 10px;
+		font-size: 1em;
+	}
 }
 
 #caja{
@@ -535,4 +543,16 @@ height: auto;
 	font-size: 3em;
 	color:#ED9961;
 	font-weight: 700;
+	text-overflow: scroll;
+	width: 100%;
+	height: auto;
 }
+
+.tipoPost{
+	margin-left:10px;
+	color: #ED9961;
+	font-style:italic;
+	font-size: 2em;
+}
+
+/*color cafe: #ED9961*/
